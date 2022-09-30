@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Bem Cuidar</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a href="#" class="logo">
+        <img class="logo-dark" src="./assets/logo-endossada-dark.svg" alt="">
+        <img class="logo-white" src="./assets/logo-endossada-white.svg" alt="">
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li><a class="active" onclick="closeMenu()" href="#home"> Início</a></li>
+          <li><a onclick="closeMenu()" href="#services"> Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#about"> Sobre</a></li>
+        </ul>
+
+        <a class="button" href="#contact" onclick="closeMenu()">Agende sua consulta</a>
+
+        <ul class="social-links">
+          <li><a target="_blank" href="https://facebook.com/hugo-hoch"><svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+              </svg></a></li>
+          <li><a target="_blank" href="https://instagram.com/hochhugo"><svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg></a></li>
+          <li><a target="_blank" href="https://youtube.com/hugohoch"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+              </svg></a></li>
+        </ul>
+      </div>
+      <button aria-expanded="false" aria-label="Abrir menu" class="open-menu" onClick="openMenu()">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_61_152)">
+            <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <defs>
+            <filter id="filter0_d_61_152" x="-4" y="0" width="48" height="48" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_61_152" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_61_152" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" class="close-menu" onClick="closeMenu()">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+
+
+        <header>
+          <h4>
+            Boas-vindas ao Grupo Bem Cuidar
+            <img src="./assets/heart.svg" alt="">
+          </h4>
+          <h1>Cuidadores e profissionais de enfermagem</h1>
+        </header>
+        <div class="content">
+          <p>O Grupo Bem Cuidar é uma empresa administrada e dirigida por profissionais de saúde com mais de 25 anos de experiência. Fornecemos profissionais capacitados em diversas áreas de atuação</p>
+          <a class="button" href="http://wa.me/5521990300876" target="_blank">
+            <img src="./assets/whatsapp.svg" alt="" srcset="">
+            Agende sua consulta
+          </a>
+        </div>
+      </div>
+      <div class="col-b">
+        <img class="woman" src="./assets/elderly-female-smiling-with-young-female-doctor-visiting-senior-patient-woman-at-hospital-ward.jpg" alt="Mulher negra vestindo moletom verde e sorrindo">
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <h3>+25</h3>
+          <p>Anos cuidando de pessoas</p>
+        </div>
+        <div class="stat">
+          <h3>+200</h3>
+          <p>Especialistas disponíveis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Serviços</h4>
+        <h2>Onde e como podemos lhe atender?</h2>
+      </header>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#dce9e2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856f" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Atendimento a domicílio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet, reiciendis asperiores adipisci
+              architecto ut repudiandae ratione, assumenda excepturi vero velit soluta eos ducimus deserunt iste unde
+              quasi aut esse!</p>
+          </div>
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#dce9e2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856f" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Atendimento hospitalar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet, reiciendis asperiores adipisci
+              architecto ut repudiandae ratione, assumenda excepturi vero velit soluta eos ducimus deserunt iste unde
+              quasi aut esse!</p>
+          </div>
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#dce9e2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856f" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Profissionais especialistas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet, reiciendis asperiores adipisci
+              architecto ut repudiandae ratione, assumenda excepturi vero velit soluta eos ducimus deserunt iste unde
+              quasi aut esse!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Sobre nós</h4>
+          <h2>Quem somos e por que existimos</h2>
+        </header>
+        <div class="content">
+          <p>
+            Somos formados por profissionais da saúde com mais de 25 anos de experiência no atendimento a pacientes tanto hospitalar quanto residencial. Trabalhamos com uma equipe especializada no cuidado humanizado, sempre buscando o melhor para nossos clientes.
+          </p>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/old-woman-looking-at-caregiver.jpg" alt="Doutor feliz segurando prancheta com paciente.">
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="col-b">
+        <header>
+          <h2>Nossas instalações</h2>
+        </header>
+        <div class="content">
+          <p>
+            Nosso escritório fica localizado em um prédio de fácil acesso no centro da cidade do Rio de Janeiro. Com um ambiente interno confortável e agradável para receber você, nosso cliente.
+          </p>
+        </div>
+      </div>
+      <div class="col-a">
+        <div class="office"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Entre em contato com a gente!</h2>
+        </header>
+
+        <div class="content">
+          <ul>
+            <li>
+              <i class="bi bi-whatsapp "></i>
+              (21) 990300876
+            </li>
+            <li>
+              <i class="bi bi-telephone "></i>
+              (21) 20424233
+            </li>
+            <li>
+              <i class="bi bi-envelope "></i>
+              contato@grupobemcuidar.com.br
+            </li>
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              Avenida Marechal Câmara,160, Edifício Orly, Sala 1107, Condomínio Centro Empresarial Charles de Gaulle, Centro, Rio de Janeiro - RJ, 20020-080
+            </li>
+          </ul>
+          <a class="button" href="http://wa.me/5521990300876" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+            Agende sua consulta
+          </a>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/notebook-on-the-table.jpg" alt="Homen negro com moletom bege mexendo no celular e sorrindo.">
+        <!-- Photo by <a href="https://unsplash.com/@firmbee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Firmbee.com</a> on <a href="https://unsplash.com/s/photos/contact?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+        <a href="#" class="logo">
+          <img src="./assets/logo-vertical-white.svg" alt="">
+        </a>
+        <ul class="social-links">
+          <li><a target="_blank" href="https://facebook.com/gbc_cuidadores"><img src="./assets/facebook.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://instagram.com/gbc_cuidadores"><img src="./assets/instagram.svg" alt=""></a></li>
+          <li><a target="_blank" href="http://wa.me/5521990300876"><img src="./assets/whatsapp-rounded.svg" alt=""></a></li>
+        </ul>
+        
+      </div>
+      <div class="col-b">
+        <p>
+          Horários de atendimento: <br />
+          Segunda a sexta de 08h às 18h
+        </p>
+        <p>
+          Build with <i class="bi bi-heart-fill"></i><br />
+          &#169; 2022 HochDev 
+          
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
