@@ -464,6 +464,7 @@ footer .social-links{
   justify-content: center;
   
 }
+#navigation .menu .social-links li a img,
 footer .social-links li a img {
   width: 4rem;
 }
