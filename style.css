@@ -138,11 +138,11 @@ button.open-menu path{
 
 section header h4 {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.08rem;
   color: var(--primary-color);
-
+  text-align: justify;
   text-transform: uppercase;
 
   margin-bottom: 1.6rem;
@@ -159,6 +159,10 @@ section header h1 {
   line-height: 130%;
 
   margin-bottom: 2.4rem;
+}
+section header h3 {
+  text-align: justify;
+  color: var(--primary-color);
 }
 
 .wrapper {
@@ -320,9 +324,7 @@ body.menu-expanded .menu{
 #services header h2{
   margin-bottom: 6rem;
 }
-#services header h3 {
-  text-align: left;
-}
+
 #services .cards{
   display: flex;
   flex-direction: column;
@@ -349,6 +351,7 @@ body.menu-expanded .menu{
 #services header .procedures p,
 #about .content .procedures p{
   display: flex;
+  text-align: left;
   align-items: center;
   gap: 1rem;
 }
@@ -486,7 +489,7 @@ footer .social-links li a img {
 #backToTopButton{
   position: fixed;
   z-index: 20;
-  bottom: 1rem;
+  bottom: 6rem;
   right: 2.5rem;
   
   opacity: 0;
@@ -499,6 +502,17 @@ footer .social-links li a img {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+.floating-whatsapp{
+  position: fixed;
+  z-index: 20;
+  bottom: 1rem;
+  
+  right:2.5rem;
+}
+.floating-whatsapp a img {
+  
+  background: tomato;
 }
 
 /* ========RESPONSIVO======== */
@@ -695,12 +709,15 @@ footer .social-links li a img {
 
   /* ========SERVICES======== */
   #services .wrapper{
-    grid-template-columns: 48rem 1fr;
+    grid-template-columns: 60.5rem 1fr;
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }
   #services .col-b{
     align-self: center;
+  }
+  #services .col-b img{
+    width: 60.5rem;
   }
   #services h2{
     width: 47rem;
@@ -729,10 +746,10 @@ footer .social-links li a img {
   }
   
   /* ========CONTACT======== */
-  /* #contact .wrapper {
+  #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
     grid-template-areas: 'A B';
-  } */
+  }
   #contact .wrapper {
     
   }
