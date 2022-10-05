@@ -355,6 +355,7 @@ body.menu-expanded .menu{
   align-items: center;
   gap: 1rem;
 }
+
 #services header h5{
   text-align: left;
   color: var(--text-gray);
