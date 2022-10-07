@@ -285,7 +285,7 @@ body.menu-expanded .menu{
   background: var(--brand-light);
 }
 #home .content{
-  background-image: url(./assets/medium-shot-woman-with-walking-stick.jpg);
+  background-image: url(./assets/senior-woman-with-her-caregiver-outdoor-light.jpg);
   width: 100%;
   height: 700px;
   background-repeat: no-repeat;
@@ -304,7 +304,7 @@ body.menu-expanded .menu{
 #home .content .skills{
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 #home .content h3{
   font-size: 2rem;
@@ -312,12 +312,12 @@ body.menu-expanded .menu{
   font-weight: 700; 
 }
 #home .content .skills p{
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: 3px;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1rem 2rem;
   width: 30rem;
 }
@@ -761,7 +761,7 @@ footer .social-links li a img {
   }
   #home .content{
     background: var(--brand-light);
-    background-image: url(./assets/medium-shot-woman-with-walking-stick.jpg);
+    background-image: url(./assets/senior-woman-with-her-caregiver-outdoor-light.jpg);
     width: 100%;
     height: 700px;
     background-repeat: no-repeat;
@@ -780,19 +780,19 @@ footer .social-links li a img {
   #home .content .skills{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
   #home .content h3{
     font-size: 3rem;
     text-align: center;
-    font-weight: 500; 
+    font-weight: 700; 
   }
   #home .content .skills p{
     background-color: transparent;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     padding: 1rem 2rem;
     width: 40rem;
   }
@@ -898,7 +898,7 @@ footer .social-links li a img {
   }
   footer .col-c{
     align-self: top;
-    text-align: right;
+    text-align: center;
   }
   footer p{
     margin-block: 0;
