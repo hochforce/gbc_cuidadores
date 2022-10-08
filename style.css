@@ -905,7 +905,8 @@ footer .social-links li a img {
     font-size: 2rem;
   }
   #about .col-b {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    align-self: center;
   }
   #about .content p {
     margin-bottom: 0;
