@@ -807,7 +807,7 @@ footer .social-links li a img {
     background-size: 210rem;
     background-position: 0px -100px;
 
-    padding: 5rem;
+    padding: 5rem 23rem;
   }
   #home .content .view{
     display: flex;
@@ -815,6 +815,7 @@ footer .social-links li a img {
     flex-direction: column;
     width: 60rem;
     gap: 8rem;
+    margin-right: 100rem;
   }
   #home .content .skills{
     display: flex;
