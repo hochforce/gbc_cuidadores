@@ -307,6 +307,7 @@ body.menu-expanded .menu{
   gap: 2rem;
 }
 #home .content h3{
+  width: min(40rem, 80%);
   font-size: 2rem;
   text-align: center;
   font-weight: 700; 
@@ -389,6 +390,22 @@ body.menu-expanded .menu{
   margin-block: 1.5rem;
   color: var(--headline);
 }
+
+/* Nossos profissionais são selecionados rigorosamente */
+#about .content .paragraph{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#about .content .paragraph img{
+  width: 24px;
+  height: 24px;
+}
+#about .content .paragraph p{
+  display: initial;
+}
+
+
 #about .content p img {
   size: 240px;
 }
@@ -408,27 +425,27 @@ body.menu-expanded .menu{
 }
 @keyframes animacao{
   0%{
-    background: url("./assets/lado-externo-do-predio.jpeg");
+    background: url("./assets/escritorio-3.jpg");
     background-repeat: none;
     background-size: 48rem 41.4rem;
   }
   25%{
-    background: url("./assets/lado-externo-do-predio.jpeg");
+    background: url("./assets/escritorio-2.jpg");
     background-repeat: none;
     background-size: 48rem 41.4rem;
   }
   50%{
-    background: url("./assets/recepcao-do-predio.jpeg");
+    background: url("./assets/escritorio-1.jpg");
     background-repeat: none;
     background-size: 48rem 41.4rem;
   }
   75%{
-    background: url("./assets/recepcao-do-predio.jpeg");
+    background: url("./assets/escritorio-3.jpg");
     background-repeat: none;
     background-size: 48rem 41.4rem;
   }
   100%{
-    background: url("./assets/lado-externo-do-predio.jpeg");
+    background: url("./assets/escritorio-1.jpg");
     background-repeat: none;
     background-size: 48rem 41.4rem;
   }
@@ -539,6 +556,24 @@ body.menu-expanded .menu{
 }
 #contact .content form button:hover{
   background-color: var(--brand-dark);
+}
+#contact .button{
+  padding: 10px;
+  margin-bottom: 3rem;
+  border: none;
+  background:  #00AD64;
+  border-radius: 3px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: "DM Sans";
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 40rem;
+}
+#contact .button:hover{
+  background-color: #007846;
 }
 
 
@@ -767,7 +802,7 @@ footer .social-links li a img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 210rem;
-    background-position: 0px 0px;
+    background-position: 0px -100px;
 
     padding: 5rem;
   }
@@ -784,6 +819,7 @@ footer .social-links li a img {
     gap: 2rem;
   }
   #home .content h3{
+    width: 60rem;
     font-size: 3rem;
     text-align: center;
     font-weight: 700; 
@@ -865,9 +901,7 @@ footer .social-links li a img {
   #about .col-a .content p{
     font-size: 2rem;
   }
-  #about .col-b{
-    
-  }
+  
   #about .content p {
     margin-bottom: 0;
   }
@@ -903,6 +937,7 @@ footer .social-links li a img {
     font-size: 3.8rem;
     /* width: 40.4rem; */
   }
+  
   /* ========FOOTER======== */
   footer {
     padding-block: 4rem;
