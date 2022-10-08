@@ -423,34 +423,39 @@ body.menu-expanded .menu{
   height: 50rem;
   
   animation-name: animacao;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 
   border-radius: 4px;
 }
 @keyframes animacao{
   0%{
-    background: url("./assets/escritorio-3.jpg");
+    background: url("./assets/escritorio-1.jpg");
     background-repeat: none;
     background-size: 53rem 50rem;
   }
-  25%{
+  20%{
     background: url("./assets/escritorio-2.jpg");
     background-repeat: none;
     background-size: 53rem 50rem;
   }
-  50%{
-    background: url("./assets/escritorio-1.jpg");
-    background-repeat: none;
-    background-size: 53rem 50rem;
-  }
-  75%{
+  40%{
     background: url("./assets/escritorio-3.jpg");
     background-repeat: none;
     background-size: 53rem 50rem;
   }
-  100%{
+  60%{
     background: url("./assets/escritorio-1.jpg");
+    background-repeat: none;
+    background-size: 53rem 50rem;
+  }
+  80%{
+    background: url("./assets/escritorio-2.jpg");
+    background-repeat: none;
+    background-size: 53rem 50rem;
+  }
+  100%{
+    background: url("./assets/escritorio-3.jpg");
     background-repeat: none;
     background-size: 53rem 50rem;
   }
